@@ -41,3 +41,55 @@ function count_configurations(a, b, c, n) {
     console.log(configurations);
 }
 
+
+//////////////////////////////////////////////////
+
+function max_grade(grades) {
+
+    console.log(Math.max.apply(null, grades));
+    
+}
+
+// write a function that finds the highest grade and 
+// prints this grade to standard output (stdout)
+
+// ////////////////////////////////////////////////
+
+function count_successful_students(grades, min_grade) {
+
+    var n = grades.length, passed = 0;
+    for (var i = 0; i < n; i++) {
+        if (grades[i] >= min_grade) {
+            passed++;
+        }
+    }
+    console.log(passed);
+}
+
+// write a function that counts the number of students 
+// that passed and prints this number to standard 
+// output (stdout)
+
+////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
