@@ -72,7 +72,23 @@ function count_successful_students(grades, min_grade) {
 
 ////////////////////////////////////////////////////
 
+function compute_average_grade(grades) {
 
+    var sum = 0;
+    for (var i = 0; i < grades.length; i++) {
+        sum += grades[i];
+    }
+    
+    console.log(Math.floor(sum / grades.length));
+}
+
+// write a function that computes the average of all the 
+// grades in the array and prints this number to 
+// standard output (stdout) the result must be rounded 
+// downwards to the nearest integer (e.g. both 7.1 and 
+// 7.9 are rounded to 7)
+
+// /////////////////////////////////////
 
 
 
