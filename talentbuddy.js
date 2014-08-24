@@ -90,6 +90,23 @@ function compute_average_grade(grades) {
 
 // /////////////////////////////////////
 
+function is_sorted(grades) {
+    for(var i = 0; i<grades.length-1;i++){
+        if(grades[i]>grades[i+1]){
+           console.log(0);
+        return;
+           }
+    }
+    console.log(1);
+}
+
+// write a function that checks whether the grades received by each student are in ascending order
+// your function must print to standard output (stdout):
+// 1 if the grades are in ascending order (e.g. 1, 3, 3, 7)
+// 0 if the grades are not in ascending order (e.g. 1, 3, 7, 3)
+// Note that your function will receive the following arguments:
+
+///////////////////////////////////////////////////
 
 
 
