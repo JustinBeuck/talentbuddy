@@ -108,6 +108,57 @@ function is_sorted(grades) {
 
 ///////////////////////////////////////////////////
 
+function longest_improvement(grades) {
+
+    count=1;
+    max_count=1;
+    for(i=1;i<grades.length;i++){
+        if(grades[i]<grades[i-1]){
+            count=1;
+        }else{
+            count++;
+            if(count>max_count)max_count=count;
+        }
+    }
+    console.log(max_count);
+    
+}
+
+// write a function that computes and prints to 
+// standard output (stdout) the longest period of 
+// increasing performance for the student that has 
+// these grades
+
+///////////////////////////////////////////////////
+
+function sort_students(numbers) {
+    
+    var swapped;
+    do {
+        swapped = false;
+        for (var i=0; i < numbers.length-1; i++) {
+            if (numbers[i] > numbers[i+1]) {
+                var temp = numbers[i];
+                numbers[i] = numbers[i+1];
+                numbers[i+1] = temp;
+                swapped = true;
+            }
+        }
+    } while (swapped);
+    for(number in numbers){
+        console.log(numbers[number])
+    }
+}
+
+// implement the bubblesort algorithm to sort 
+// the array in ascending order and print the 
+// sorted elements to standard output (stdout), 
+// one per line
+
+
+/////////////////////////////////////////////////////
+
+
 
 
 
