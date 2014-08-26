@@ -159,8 +159,31 @@ function sort_students(numbers) {
 /////////////////////////////////////////////////////
 
 
+function get_common_courses(courses1, courses2) {
+    courses1.filter(function(item){
+        return (courses2.indexOf(item) > -1);
+    }).sort(function(a,b){
+        return a-b;
+    }).forEach(function(item){
+        console.log(item);
+    });
+}
 
+// write a function that prints to standard output 
+// (stdout) all the course IDs that are contained in 
+// both arrays, sorted in ascending order, one per line
 
+// ////////////////////////////////////////////
+
+function copy_string(s1, s2, p) {
+    console.log(s1.slice(0, p) + s2 + s1.slice(p));
+}
+
+// write a function that inserts S2 into S1 starting 
+// with the position P in S1 and then prints the newly 
+// formed string S1 to standard output (stdout)
+
+///////////////////////////////////////////////////////
 
 
 
